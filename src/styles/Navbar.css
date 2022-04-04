@@ -1,0 +1,33 @@
+.navbar{
+    background-color: #c0ebc3;
+}
+.header{
+     
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  background: #111c30;
+  background: -webkit-linear-gradient(top left, #111c30, #5da262);
+  background: -moz-linear-gradient(top left, #111c30, #5da262);
+  background: linear-gradient(to bottom right, #111c30, #5da262);
+  color: white;
+  justify-content: space-around;
+  height: 45px;
+  padding: 10px;
+  
+  transition: all 0.5s ease-in-out;
+}
+.navbar_form{
+    display: flex;
+    margin: 1rem 1rem 0rem 1rem;
+    justify-content: space-around;
+    
+}
+
+@media (max-width: 540px) {
+    .navbar_form {
+     flex-direction: column;
+     
+    }
+    
+  }
