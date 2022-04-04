@@ -1,7 +1,7 @@
 import React from 'react';
 import "../styles/ContestCard.css"
 
-const ContestCard = ({ name, url, start_time, end_time, duration, site }) => {
+const ContestCard = ({ name, url, start_time, end_time, duration, site, style }) => {
     const convertTime = (duration) => {
         var sec = Number(duration);
         var hr = Math.floor(sec / 3600);
@@ -21,7 +21,7 @@ const ContestCard = ({ name, url, start_time, end_time, duration, site }) => {
     }
 
     return (
-        <a href={url} target="_blank" className="contestCard">
+        <a href={url} target="_blank" className={`contestCard ${style}`}>
             <div >
                 <div className="contestCard_content">
                     <div className="heading">

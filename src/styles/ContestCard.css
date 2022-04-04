@@ -1,7 +1,6 @@
 .contestCard {
     width: 280px;
     margin: 2rem;
-    
     cursor: pointer;
     text-decoration: none;
     color: black !important;
@@ -71,5 +70,8 @@
     text-align: center;
     margin-top: 5px;
     background-color: rgb(232, 255, 255);
+  }
+  .right_margin{
+    margin-right: 4rem;
   }
   

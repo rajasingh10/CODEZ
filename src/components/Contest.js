@@ -12,7 +12,7 @@ const Contest = ({ name, content }) => {
             </div>
 
             <div className="ContestCards">
-                {content.map((data, index) => <ContestCard key={index} name={data.name} url={data.url} start_time={data.start_time} end_time={data.end_time} duration={data.duration} site={data.site} />)}
+                {content.map((data, index) => <ContestCard key={index} name={data.name} url={data.url} start_time={data.start_time} end_time={data.end_time} duration={data.duration} site={data.site} style={content.length == index + 1 && "right_margin"} />)}
             </div>
         </div>
     )
